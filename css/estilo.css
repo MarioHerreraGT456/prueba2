@@ -1,0 +1,256 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body {
+    /* para hacer un degradado de colores con el fondo de la pagina web */
+    background: linear-gradient(-45deg, rgb(241, 240, 241), rgb(92, 77, 226), rgb(63, 1, 78));
+    /* las siguientes lineas es para evitar que se repita la imagen del degradado de color */
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    /*estilo de fuente*/
+    /* font-family: "Inconsolata", monospace; */
+    font-family: "Jersey 10", sans-serif;
+}
+/* configuracion pagina completa */
+.padre {
+    /* background: black; */
+    padding: 0;
+    margin: 0;
+  
+}
+/* encabezado de la pagina */
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 2px;
+}
+
+  .logo img {
+    width: 5%;
+    margin: 0;
+    padding: 0;
+  }
+  .logo h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+/* personalizar formulario */
+.formulario{
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.titulo {
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 10px 100px 80px 100px;
+}
+  .titulo h1 {
+    font-size: 70px;
+  }
+  .titulo p{
+    font-size: 25px;
+  }
+/* formulario */
+.cuadro-formulario {
+    background-color: rgba(136, 116, 116, 0.5);
+    border-radius: 25px;
+    padding: 20px;
+}
+ .formula {
+    display: flex;
+    flex-direction: column;
+ }
+ /* seccion de nombre de empresa y correo */
+ .uno {
+    display: flex;
+    justify-content: space-around;
+ }
+   .nombre {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+   }
+    .nombre p {
+      align-self: flex-start;
+      margin: 0;
+      padding: 0;
+    }
+    .nombre input {
+      width: 100%;
+      align-self: flex-start;
+      margin: 0;
+      padding: 0;
+      height: 50px;
+      border-radius: 15px;
+    }
+   .correo {
+    align-self: flex-start;
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+      .correo p{
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+      }
+      .correo input {
+        width: 100%;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        border-radius: 15px;
+      }
+
+ .dos {
+    display: flex;
+    justify-content: space-around;
+ }
+ .ubicacion {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+   .ubicacion p {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+   }
+   .ubicacion select {
+        width: 100%;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        border-radius: 15px;
+   }
+   
+.producto {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.producto p {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+ }
+ .producto select {
+        width: 100%;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        border-radius: 15px;
+ }
+
+    
+
+ /* seccion del cuadro descriptivo */
+ .tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+ }
+  .tres p {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .tres textarea {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 15px;
+  }   
+   /* .cuadro {
+    background: grey;
+   } */
+    
+ /* seccion del boton contacto */
+ .cuatro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+ }
+   .boton {
+    display: flex;
+    width: 100%;
+    background: rgb(245, 245, 245);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 15px;
+   }
+   .boton a{
+    text-decoration: none;
+    color: black;
+    }
+   .boton:hover {
+    background: rgb(79, 86, 189);
+   }
+   .boton:hover a{
+    color: white;
+   }
+
+@media (max-width:1024px) {
+  .formulario {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 640px){
+    .formulario {
+      margin: 0 20px;
+    }
+    .uno {
+      flex-direction: column;
+    }
+    .dos {
+      flex-direction: column;
+    }
+    .nombre input {
+      width: 95%;
+    }
+    .correo input {
+      width: 95%;
+    }
+    .ubicacion select {
+      width: 95%;
+    }
+    .producto select {
+      width: 95%;
+    }
+}

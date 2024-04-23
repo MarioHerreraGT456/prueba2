@@ -237,6 +237,9 @@ body {
    }
 
 @media (max-width:1080px) {
+  .padre {
+      justify-content: flex-start;
+  }
   .formulario {
     margin: 50px 50px;
   }

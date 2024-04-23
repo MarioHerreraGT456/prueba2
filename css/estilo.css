@@ -78,6 +78,7 @@ body {
 .cuadro-formulario {
     background-color: rgba(136, 116, 116, 0.5);
     border-radius: 25px;
+    margin: 0 50px;
     padding: 20px;
 }
  .formula {

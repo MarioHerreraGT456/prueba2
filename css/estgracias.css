@@ -108,7 +108,7 @@ body {
   .facebook:hover a{
     color: rgb(197, 35, 184);
   }
-  @media (max-width:1024px) {
+  @media (max-width:1080px) {
     .titulo {
         margin: 200px 10px 50px 10px;
         padding: 10px;
